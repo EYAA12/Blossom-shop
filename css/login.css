@@ -40,8 +40,10 @@
   
   
   
-  .Login_section button {
-    padding: 15px 55px;
+  .Login_section button, .Login_section input[type=submit] {
+    text-align: center;
+    width: 100px;
+    padding-left: 8px;
     outline: none;
     border: none;
     border-radius: 30px;
@@ -52,7 +54,7 @@
     background-color: #dc373d;
   }
   
-  .Login_section button:hover {
+  .Login_section button:hover, .Login_section input[type=submit]:hover {
     color: #dc373d;
     background-color: transparent;
   }
