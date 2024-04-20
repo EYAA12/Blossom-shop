@@ -40,7 +40,7 @@
                   <a class="nav-link" href="gallery.html"> Gallery </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="sign up.php">Account</a>
+                  <a class="nav-link" href="sign-up.php">Account</a>
                 </li>
               </li>
               <li class="nav-item ">
@@ -48,19 +48,31 @@
 
 
               </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="loginadmini.html">Administrator</a>
+
+
+              </li>
+              
               </ul>
             </div>
-
+            <div class="quote_btn-container" onclick="showProfile()">
+              <a href="#">
+                 <img src="images/eyaaa.jpeg" alt="Profile Icon">
+              </a>
+              <div id="profile-info" style="display: none;"></div> <!-- Element to display username and email -->
+           </div>
+           
             <div class="quote_btn-container ">
               
               <a href="cart.html">
-                <img src="images/cart.png" alt="">
+                <img src="images/cartt.webp" alt="">
               </a>
-              <form class="form-inline"> 
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-              </form>
+              
             </div>
-          
+
+            
+            
         </nav>
       </div>
     </header>
@@ -143,7 +155,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="sign up.php">
+                  <a href="sign up.html">
                     Sign up
                   </a>
                 </li>
@@ -162,7 +174,17 @@
   
 
 
-
+          <script>
+            function showProfile() {
+                // Fetch username and email using JavaScript
+                let userName = "<?php echo isset($_SESSION['user_name']) ? $_SESSION['user_name'] : 'Guest'; ?>";
+                let userEmail = "<?php echo isset($_SESSION['user_email']) ? $_SESSION['user_email'] : ''; ?>";
+                
+                // Display username and email in an alert box (you can customize this as needed)
+                alert("Username: " + userName + "\nEmail: " + userEmail);
+            }
+            </script>
+            
 
 
 </body>
