@@ -1,0 +1,62 @@
+/*login section*/
+
+
+.Login_section h2 {
+    margin-bottom: 65px;
+  }
+  
+  .Login_section form {
+    padding-right: 35px;
+  }
+  
+  .Login_section input {
+    width: 100%;
+    border: 0;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    padding-left: 25px;
+    background-color: transparent;
+    border: 1px solid #bbbbbb;
+    outline: none;
+    color: #101010;
+  }
+  
+  .Login_section input::-webkit-input-placeholder {
+    color: #131313;
+  }
+  
+  .Login_section input:-ms-input-placeholder {
+    color: #131313;
+  }
+  
+  .Login_section input::-ms-input-placeholder {
+    color: #131313;
+  }
+  
+  .Login_section input::placeholder {
+    color: #131313;
+  }
+  
+  
+  
+  .Login_section button, .Login_section input[type=submit] {
+    text-align: center;
+    width: 100px;
+    padding-left: 8px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    border: 1px solid #dc373d;
+    color: #fff;
+    font-weight: bold;
+    margin: 0 auto;
+    background-color: #dc373d;
+  }
+  
+  .Login_section button:hover, .Login_section input[type=submit]:hover {
+    color: #dc373d;
+    background-color: transparent;
+  }
+  
+  /*end login section*/

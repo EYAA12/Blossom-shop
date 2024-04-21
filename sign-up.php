@@ -64,7 +64,7 @@
                   <a class="nav-link" href="gallery.html"> Gallery </a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="sign-up.php">Account</a>
+                  <a class="nav-link" href="sign-up.php">Sign up</a>
                 </li>
                 <li class="nav-item ">
                   <a class="nav-link" href="buy.html">Buy now</a>
@@ -81,7 +81,7 @@
             </div>
             <div class="quote_btn-container ">
               
-              <a href="cart.html">
+              <a href="userspace.html">
                 <img src="images/eyaaa.jpeg" alt="">
               </a>
               
@@ -172,6 +172,7 @@
 
         // All fields are valid
         alert("Your account has been created successfully! Please Login now");
+        window.location.href = "./login.php" ;
         return true;
       }
     </script>

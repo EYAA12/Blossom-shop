@@ -40,7 +40,7 @@
                   <a class="nav-link" href="gallery.html"> Gallery </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="sign-up.php">Account</a>
+                  <a class="nav-link" href="sign-up.php">Sign up</a>
                 </li>
               </li>
               <li class="nav-item ">
@@ -57,7 +57,7 @@
               </ul>
             </div>
             <div class="quote_btn-container" onclick="showProfile()">
-              <a href="#">
+              <a href="userspace.html">
                  <img src="images/eyaaa.jpeg" alt="Profile Icon">
               </a>
               <div id="profile-info" style="display: none;"></div> <!-- Element to display username and email -->
@@ -174,17 +174,7 @@
   
 
 
-          <script>
-            function showProfile() {
-                // Fetch username and email using JavaScript
-                let userName = "<?php echo isset($_SESSION['user_name']) ? $_SESSION['user_name'] : 'Guest'; ?>";
-                let userEmail = "<?php echo isset($_SESSION['user_email']) ? $_SESSION['user_email'] : ''; ?>";
-                
-                // Display username and email in an alert box (you can customize this as needed)
-                alert("Username: " + userName + "\nEmail: " + userEmail);
-            }
-            </script>
-            
+        
 
 
 </body>
